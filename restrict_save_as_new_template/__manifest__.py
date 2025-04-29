@@ -14,5 +14,5 @@
         # views
         "views/mail_compose_message.xml",
     ],
-    "installable": False,
+    "installable": False,  # TODO MIG 18
 }
