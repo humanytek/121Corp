@@ -22,4 +22,5 @@
         "report/invoice_pdf_report.xml",
     ],
     "images": ["images/cfdi-banner.png"],
+    "license": "AGPL-3",
 }

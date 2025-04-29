@@ -16,4 +16,5 @@
         "views/account_payment.xml",
         "data/data.xml",
     ],
+    "license": "AGPL-3",
 }

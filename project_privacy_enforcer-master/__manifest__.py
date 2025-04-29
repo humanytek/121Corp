@@ -19,12 +19,13 @@
 ##############################################################################
 
 {
-    'name': 'Project Privacy Enforcer',
-    'version': '1.0',
-    'author': 'Humanytek',
-    'website': 'http://humanytek.com',
-    'depends': [
-        'project',
+    "name": "Project Privacy Enforcer",
+    "version": "1.0",
+    "author": "Humanytek",
+    "website": "http://humanytek.com",
+    "depends": [
+        "project",
     ],
-    'data': []
+    "data": [],
+    "license": "AGPL-3",
 }
