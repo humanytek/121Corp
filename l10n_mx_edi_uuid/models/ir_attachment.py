@@ -76,15 +76,17 @@ class IrAttachment(models.Model):
             ("name", "not like", "."),
         ]
 
-    def write(self, vals):
+    def write(self, vals_list):
         if self.env.context.get("force_l10n_mx_edi_cfdi_uuid"):
-            return super().write(vals)
-        vals.pop("l10n_mx_edi_cfdi_uuid", None)
-        with self.env.cr.savepoint():
-            # Secure way if someone catch the exception to skip a rollback
-            res = super().write(vals)
-            if set(vals.keys()) & set(FIELDS):
-                self.update_uuid()
+            return super().write(vals_list)
+
+        for vals in vals_list:
+            vals.pop("l10n_mx_edi_cfdi_uuid", None)
+            with self.env.cr.savepoint():
+                # Secure way if someone catch the exception to skip a rollback
+                res = super().write(vals)
+                if set(vals.keys()) & set(FIELDS):
+                    self.update_uuid()
         return res
 
     @api.model_create_multi
