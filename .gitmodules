@@ -51,10 +51,6 @@
 	path = humanytek-team/project_unique_name
 	url = git@github.com:humanytek-team/project_unique_name.git
 	branch = 13.0
-[submodule "vendor-bills"]
-	path = vendor-bills
-	url = git@git.vauxoo.com:vauxoo/vendor-bills.git
-	branch = 13.0
 [submodule "planning_slot_department"]
 	path = planning_slot_department
 	url = git@github.com:humanytek-team/planning_slot_department.git
