@@ -58,3 +58,6 @@
 [submodule "humanytek-team/crm_in_contacts"]
 	path = humanytek-team/crm_in_contacts
 	url = https://github.com/humanytek-team/crm_in_contacts
+[submodule "humanytek-team/project_default_stages"]
+	path = humanytek-team/project_default_stages
+	url = git@github.com:humanytek-team/project_default_stages
