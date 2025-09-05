@@ -61,3 +61,7 @@
 [submodule "humanytek-team/project_default_stages"]
 	path = humanytek-team/project_default_stages
 	url = git@github.com:humanytek-team/project_default_stages
+[submodule "server-auth"]
+	path = server-auth
+	url = https://github.com/OCA/server-auth.git
+	branch = 18.0
